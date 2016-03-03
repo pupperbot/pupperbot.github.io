@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #36393e;
+}
+#container {
+	width:80%;
+	margin:auto;
+	padding-top:100px;	
+}
+p {
+	animation: type 1s steps(60, end);
+	overflow:hidden;
+  	white-space: nowrap;
+  	width: 100%;
+	margin-bottom:0px;
+	padding-bottom:8px;
+}
+
+#pupperbot {
+	color:#c3c4c5;
+	font-weight:200;
+	font-size:52px;
+}
+p:nth-child(2) {
+	color:#c3c4c5;
+	border-top:1px solid #3e4146;
+	border-bottom:1px solid #3e4146;
+	padding-bottom:8px;
+	font-weight:200;
+	font-size:52px;
+	animation: type2 1.5s steps(1, end);
+	width:100%;
+	margin-top:0px;
+}
+.name {
+	font-size:52px;
+	font-weight:200;
+}
+.time {
+	color:#5a5c61;
+	font-size:28px;
+	font-weight:200;
+}
+#chatbox {
+	color:#5a5c61;
+	font-size:28px;
+	padding-left:5px;
+	line-height:32px;
+	font-weight:200;
+}
+#chat {
+	background:#424549;
+	padding-bottom:0px;
+}
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 00;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+#blink {
+  animation: blink 1s infinite;
+  font-size:32px;
+  padding-bottom:0px;
+}
